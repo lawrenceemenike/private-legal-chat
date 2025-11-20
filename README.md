@@ -11,7 +11,7 @@ graph TD
     API --> Chain[RAG Chain]
     Chain --> Retriever[Retriever]
     Retriever --> VectorDB[(ChromaDB)]
-    Chain --> LLM[Local LLM (LlamaCpp)]
+    Chain --> LLM["Local LLM (LlamaCpp)"]
     
     subgraph "Ingestion Pipeline"
         Docs[PDF/TXT Docs] --> Loader[Document Loader]
